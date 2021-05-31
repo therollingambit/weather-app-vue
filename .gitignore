@@ -2,6 +2,7 @@
 node_modules
 /dist
 
+/src/apis
 
 # local env files
 .env.local
