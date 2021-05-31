@@ -25,7 +25,8 @@
 </template>
 
 <script>
-import { API_KEY } from "@/apis/api.js";
+// import { API_KEY } from "@/apis/api.js";
+import { API_KEY } from "process.env.API_KEY";
 import axios from "axios";
 import moment from "moment";
 
