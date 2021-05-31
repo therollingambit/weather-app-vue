@@ -26,7 +26,6 @@
 
 <script>
 // import { API_KEY } from "@/apis/api.js";
-import { API_KEY } from "process.env.API_KEY";
 import axios from "axios";
 import moment from "moment";
 
@@ -35,7 +34,7 @@ export default {
   components: {},
   data() {
     return {
-      api: { key: API_KEY, base: "https://api.openweathermap.org/data/2.5/" },
+      api: { key: process.env.API_KEY, base: "https://api.openweathermap.org/data/2.5/" },
       query: "",
       weather: {},
     };
